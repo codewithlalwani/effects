@@ -1,7 +1,7 @@
 
-$('#text1 ').textillate({ in: { effect: 'fadeInUp' , delay : 80} } ) ;
+$('#text1').textillate({ in: { effect: 'fadeInUp' , delay : 80} } ) ;
 
-$('#text2 ').textillate({ in: { effect: 'fadeInUp',delay : 80 } });
+$('#text2').textillate({ in: { effect: 'fadeInUp',delay : 80 } });
 
 
 
@@ -34,7 +34,7 @@ document.querySelectorAll("#img").forEach(function(element) {
         document.querySelector("#cursor").style.width =`20px`
         document.querySelector("#cursor").style.opacity = `1`
         document.querySelector("#cursor").style.height = `20px`
-        document.querySelector("#main").style.backgroundColor = `transparent`
+        document.querySelector("#main").style.backgroundColor = `beige`
         document.querySelector("#cursor").style.mixBlendMode = `initial`
     })
 
@@ -56,29 +56,26 @@ document.querySelectorAll("#img2").forEach(function(element) {
         document.querySelector("#cursor").style.width =`20px`
         document.querySelector("#cursor").style.opacity = `1`
         document.querySelector("#cursor").style.height = `20px`
-        document.querySelector("#main").style.backgroundColor = `transparent`
+        document.querySelector("#main").style.backgroundColor = `beige`
         document.querySelector("#cursor").style.mixBlendMode = `initial`
     })
 
 
 });
 
-document.querySelector("#text1 ")("mousemove",function(element) {
+document.querySelector("#text1"),function(element) {
     element.addEventListener("mousemove",function(dets){
         document.querySelector("#cursor").style.mixBlendMode = `difference`
     })
 
-
-
-    element.addEventListener("mousemove",function(dets){
+    element.addEventListener("mouseleave",function(dets){
         document.querySelector("#cursor").style.mixBlendMode = `initial`
     })
-
-});
-
+};
 
 
-document.querySelector("#text2 ")("mousemove",function(element) {
+
+document.querySelector("#text2"),function(element) {
     element.addEventListener("mousemove",function(dets){
     
         
@@ -86,10 +83,28 @@ document.querySelector("#text2 ")("mousemove",function(element) {
     })
 
 
-    element.addEventListener("mousemove",function(dets){
+    element.addEventListener("mouseleave",function(dets){
         document.querySelector("#cursor").style.mixBlendMode = `initial`
     })
-});
+};
 
+
+document.querySelector("#email").addEventListener("mousemove",function(dets){
+     
+        document.querySelector("#email").style.transform = `translate(${dets.clientX*0.04}px,${dets.clientY*0.04}px)`;
+        // document.querySelector('#email').style.backgroundColor = "white";
+
+    })
+
+    
+        $('.txt').textillate({
+            in:{effect:'fadeInUp',sequence:true,delay:40},
+            out:{effect:'fadeOutUp' ,sequence:true,delay: 40},
+            loop:true
+        });
+
+    
+
+    
 
 

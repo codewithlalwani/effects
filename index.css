@@ -13,7 +13,7 @@ html,body{
 #main{
     width: 100vw;
     height: 500vh;
-    background-color: rgb(250, 247, 241);
+    background-color:silver;
     display: block;
     overflow: hidden;
     transition: all cubic-bezier(0.19, 1, 0.22, 1) 5s;
@@ -160,7 +160,35 @@ html,body{
     
 }
 
+#txt{
+    display: flex;
+    justify-content:flex-start;
+    height: 7vh;
+    width: 40vw;
+    margin-left: 7%;
+    margin-top: 3%;
+    font-size: 30px;
+    
+}
 
+.txt{
+    margin-left:-200px;
+}
+#email{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 150px;
+    width:150px;
+    border-radius: 50%;
+    background-color: #0a0a0a;
+    color: aliceblue;
+    margin-top: 5%;
+    margin-left: 6%;
+    /* transform: translate(1%,6%); */
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
 
 #pointer .wheel{
     animation: an infinite 7s;
