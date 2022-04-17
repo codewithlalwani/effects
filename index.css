@@ -163,12 +163,12 @@ html,body{
 #txt{
     display: flex;
     justify-content:flex-start;
-    height: 7vh;
-    width: 40vw;
+    height: 10vh;
+    width: 100vw;
     margin-left: 7%;
     margin-top: 3%;
-    font-size: 30px;
-    
+    font-size: 4vh;
+   
 }
 
 .txt{
