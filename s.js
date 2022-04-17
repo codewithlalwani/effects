@@ -34,7 +34,7 @@ document.querySelectorAll("#img").forEach(function(element) {
         document.querySelector("#cursor").style.width =`20px`
         document.querySelector("#cursor").style.opacity = `1`
         document.querySelector("#cursor").style.height = `20px`
-        document.querySelector("#main").style.backgroundColor = `beige`
+        document.querySelector("#main").style.backgroundColor = `silver`
         document.querySelector("#cursor").style.mixBlendMode = `initial`
     })
 
@@ -56,7 +56,7 @@ document.querySelectorAll("#img2").forEach(function(element) {
         document.querySelector("#cursor").style.width =`20px`
         document.querySelector("#cursor").style.opacity = `1`
         document.querySelector("#cursor").style.height = `20px`
-        document.querySelector("#main").style.backgroundColor = `beige`
+        document.querySelector("#main").style.backgroundColor = `silver`
         document.querySelector("#cursor").style.mixBlendMode = `initial`
     })
 
