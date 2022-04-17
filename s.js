@@ -30,7 +30,7 @@ document.querySelectorAll("#img").forEach(function(element) {
 
     element.addEventListener("mouseleave",function(dets){
       
-        document.querySelector("#pointer").style.top = `-200px`
+        document.querySelector("#pointer").style.top = `-150px`
         document.querySelector("#cursor").style.width =`20px`
         document.querySelector("#cursor").style.opacity = `1`
         document.querySelector("#cursor").style.height = `20px`
@@ -52,7 +52,7 @@ document.querySelectorAll("#img2").forEach(function(element) {
     })
 
     element.addEventListener("mouseleave",function(dets){
-        document.querySelector("#pointer").style.top = `-200px`
+        document.querySelector("#pointer").style.top = `-150px`
         document.querySelector("#cursor").style.width =`20px`
         document.querySelector("#cursor").style.opacity = `1`
         document.querySelector("#cursor").style.height = `20px`
@@ -95,6 +95,39 @@ document.querySelector("#email").addEventListener("mousemove",function(dets){
         // document.querySelector('#email').style.backgroundColor = "white";
 
     })
+
+    document.querySelector("#txt").addEventListener("mousemove",function(dets){
+        
+        document.querySelector("#cursor").style.backgroundColor = `white`
+        document.querySelector("#cursor").style.width = "60px"
+        document.querySelector("#cursor").style.height = "60px"
+        document.querySelector("#cursor").style.mixBlendMode = `difference`
+    })
+
+    document.querySelector("#txt").addEventListener("mouseleave",function(dets){
+        
+        document.querySelector("#cursor").style.backgroundColor = `transparent`
+        document.querySelector("#cursor").style.width = "20px"
+        document.querySelector("#cursor").style.height = "20px"
+        document.querySelector("#cursor").style.mixBlendMode = `initial`
+    })
+
+    document.querySelector("#email").addEventListener("mousemove",function(dets){
+        
+        document.querySelector("#cursor").style.backgroundColor = `white`
+        document.querySelector("#cursor").style.width = "60px"
+        document.querySelector("#cursor").style.height = "60px"
+        document.querySelector("#cursor").style.mixBlendMode = `difference`
+    })
+
+    document.querySelector("#email").addEventListener("mouseleave",function(dets){
+        
+        document.querySelector("#cursor").style.backgroundColor = `transparent`
+        document.querySelector("#cursor").style.width = "20px"
+        document.querySelector("#cursor").style.height = "20px"
+        document.querySelector("#cursor").style.mixBlendMode = `initial`
+    })
+
 
     
         $('.txt').textillate({
