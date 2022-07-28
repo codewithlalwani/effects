@@ -18,7 +18,7 @@ window.addEventListener("mousemove",function(dets){
 
 
 
-document.querySelectorAll("#img").forEach(function(element) {
+document.querySelectorAll("#img>img").forEach(function(element) {
     element.addEventListener("mousemove",function(dets){
         
         document.querySelector("#pointer").style.left = `${dets.clientX}px`

@@ -6,13 +6,13 @@
 }
 
 html,body{
-    height: 500vh;
+    height: 540vh;
     width: 100vw;
 }
 
 #main{
     width: 100vw;
-    height: 500vh;
+    height: 540vh;
     background-color:silver;
     display: block;
     overflow: hidden;
@@ -68,23 +68,60 @@ html,body{
     margin-top: 10px;
 }
 
-
-
-#imgs #img {
+#img{
     overflow: hidden;
     width: 30vw;
-   height: 45vh;
+    height: 57vh;
+     margin-top: 20%;
+     margin-left: 60%;
+     
+}
+
+#t1{
+    margin-left: 3%;
+}
+
+#r h5{
+    margin-left: 3%;
+    height: min-content;
+    font-weight: 100;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#t2{
+    margin-left: 3%;
+}
+
+#r h5{
+    margin-left: 3%;
+    height: min-content;
+    font-weight: 100;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#img2{
+    overflow: hidden;
+    width: 30vw;
+    height: 55vh;
     margin-top: 20%;
-    margin-left: 60%;
+    margin-left: 6%;
    
 }
 
-#imgs #img2 {
-    overflow: hidden;
+ #img img{
+   overflow:hidden;
+    width: 30vw;
+   height: 45vh;
+   animation: w .7s; 
+   transition: transform 2s;
+}
+
+ #img2 img{
+    overflow:hidden;
     width: 30vw;
     height: 45vh;
-    margin-top: 20%;
-    margin-left: 6%;
+    animation: w .7s;
+    transition: transform 2s;
 }
 
 
@@ -101,25 +138,6 @@ html,body{
     z-index: 99999999;
 }
 
-/* #cursor2{
-    background-color: black;
-    position: fixed;
-    transition: all ease-out .4s;
-    transform: translate(-50%,-50%);
-    top: 20%;
-    left: 50%;
-    border-radius: 50%;
-    z-index: 9999999;
-} */
-
-/* #cursor svg{
-    mix-blend-mode: difference;
-    width: 100px;
-} */
-
-/* #cursor svg:nth-child(2){
-    position: absolute;
-} */
 
 #pointer{
    top: -200px;
@@ -166,7 +184,7 @@ html,body{
     height: 10vh;
     width: 100vw;
     margin-left: 7%;
-    margin-top: 3%;
+    margin-top: 9%;
     font-size: 4vh;
    
 }
@@ -195,15 +213,15 @@ html,body{
     position: absolute;
     fill: white;
 }
-img{
-    animation: w .7s; 
-}
 
- #imgs img{
-    transition: transform 2s;
- }
 
-    img:hover {
+    #img img:hover {
+
+    transform: scale(1.05) ; /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+
+    #img2 img:hover {
 
     transform: scale(1.05) ; /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   }
@@ -217,3 +235,27 @@ img{
         transform: rotate(360deg);
     }
 }
+
+@media only screen and (max-width: 500px) {
+    
+
+    #img{
+        margin-top: 36%;
+        margin-left: 0%;
+        width: 100vw;
+    }
+
+    #img img{
+        width:100%;
+    }
+
+    #img2{
+        margin-top: 36%;
+        margin-left: 0%;
+        width: 100vw;
+    }
+
+    #img2 img{
+        width:100%;
+    }
+  }
